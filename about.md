@@ -2,73 +2,48 @@
 layout: article
 titles:
   # @start locale config
-  en      : &EN       About
-  en-GB   : *EN
-  en-US   : *EN
-  en-CA   : *EN
-  en-AU   : *EN
-  zh-Hans : &ZH_HANS  关于
-  zh      : *ZH_HANS
-  zh-CN   : *ZH_HANS
-  zh-SG   : *ZH_HANS
-  zh-Hant : &ZH_HANT  關於
-  zh-TW   : *ZH_HANT
-  zh-HK   : *ZH_HANT
-  ko      : &KO       소개
-  ko-KR   : *KO
-  fr      : &FR       À propos
-  fr-BE   : *FR
-  fr-CA   : *FR
-  fr-CH   : *FR
-  fr-FR   : *FR
-  fr-LU   : *FR
+  en: &EN About
+  en-GB: *EN
+  en-US: *EN
+  en-CA: *EN
+  en-AU: *EN
+  zh-Hans: &ZH_HANS 关于
+  zh: *ZH_HANS
+  zh-CN: *ZH_HANS
+  zh-SG: *ZH_HANS
+  zh-Hant: &ZH_HANT 關於
+  zh-TW: *ZH_HANT
+  zh-HK: *ZH_HANT
+  ko: &KO 소개
+  ko-KR: *KO
+  fr: &FR À propos
+  fr-BE: *FR
+  fr-CA: *FR
+  fr-CH: *FR
+  fr-FR: *FR
+  fr-LU: *FR
   # @end locale config
 key: page-about
 ---
 
-![TeXt Theme](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/TeXt-home.jpg)
+&emsp;&emsp; Greetings! I am a passionate explorer of the vast realm of technology, and I welcome you to my blog. My journey began at **XDU**, where I laid the foundation for my academic pursuits. Currently, I am pursuing my postgraduate studies at the **UESTC**, focusing on the dynamic of Information and Communication Engineering.
 
-TeXt is a super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc. Similar to iOS 11 style, it has large and prominent titles, round buttons and cards.
+### Passions and Interests
 
-```javascript
-(() => console.log('Hello, World!'))();
-```
+&emsp;&emsp; Fueling my passion is an unquenchable curiosity about the inner workings of technology. My interests have led me to explore various facets of the tech world, including:
 
-## Features
+**C++** : The elegance and power of C++ have captured my heart. I am constantly honing my skills in this versatile programming language, delving into its nuances and leveraging it to craft efficient and elegant solutions.
 
-- Responsive
-- Semantic HTML
-- Skins
-- Highlight Theme
-- Internationalization
-- Search
-- Table of contents
-- Authors
-- Additional styles (alert, tag, image, icon, button, grid, etc)
-- Extensions (audios, videos, slides, demos)
-- Markdown enhancements ([MathJax](https://www.mathjax.org/), [mermaid](https://mermaidjs.github.io/), [chartjs](http://www.chartjs.org/))
-- Sharing ([AddToAny](https://www.addtoany.com/), [AddThis](https://www.addthis.com/))
-- Comments ([Disqus](https://disqus.com/), [Gitalk](https://gitalk.github.io/), [Valine](https://valine.js.org/en/))
-- Pageview ([LeanCloud](https://leancloud.cn/))
-- Analytics ([Google Analytics](https://analytics.google.com/analytics/web/))
-- RSS ([jekyll-feed](https://github.com/jekyll/jekyll-feed))
+**Database** : The world of databases intrigues me. I find joy in designing and optimizing database structures, ensuring data integrity, and navigating the evolving landscape of data management.
 
-## Skins
+**Concurrent Rrogramming** : Concurrency is both a challenge and an art. Exploring the intricacies of concurrent programming, I strive to create applications that make the most of modern multi-core processors.
 
-TeXt has 6 built-in skins, you can also set up your own skin.
+**Distributed System**: The architecture of distributed systems fascinates me. I am dedicated to understanding the principles that underlie the seamless communication and coordination among distributed components.
 
-| `default` | `dark` | `forest` |
-| --- |  --- | --- |
-| ![Default](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_default.jpg) | ![Dark](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_dark.jpg) | ![Forest](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_forest.jpg) |
+### A Lifelong Learner
 
-| `ocean` | `chocolate` | `orange` |
-| --- |  --- | --- |
-| ![Ocean](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_ocean.jpg) | ![Chocolate](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_chocolate.jpg) | ![Orange](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_orange.jpg) |
+&emsp;&emsp; My blog is a testament to my commitment to lifelong learning. Here, I document my explorations, insights, challenges, and triumphs as I unravel the mysteries of the tech world. Through detailed tutorials, thought-provoking analyses, I hope to contribute to the tech community and inspire fellow enthusiasts to embark on their own journeys of discovery.
 
-### Highlight Theme
+### Join Me on this Quest
 
-TeXt use [Tomorrow](https://github.com/chriskempson/tomorrow-theme) as the highlight theme.
-
-| `tomorrow` | `tomorrow-night` | `tomorrow-night-eighties` | `tomorrow-night-blue` | `tomorrow-night-bright` |
-| --- |  --- | --- | --- |  --- |
-| ![Tomorrow](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow.png) | ![Tomorrow Night](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night.png) | ![Tomorrow Night Eighties](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-eighties.png) | ![Tomorrow Night Blue](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-blue.png) | ![Tomorrow Night Bright](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-bright.png) |
+&emsp;&emsp; Whether you're a fellow enthusiast, a student, or a curious mind, I invite you to accompany me on this exciting quest for knowledge. Together, we will navigate the ever-evolving landscape of technology, uncovering its hidden gems and pushing the boundaries of our understanding. Welcome to my blog, where curiosity meets code, and where the possibilities are as limitless as the digital world itself.
