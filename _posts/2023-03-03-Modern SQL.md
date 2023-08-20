@@ -1,6 +1,7 @@
 ---
 title: Modern SQL
 tags: 数据库 SQL
+key: hui1sdf
 sidebar:
   nav: layouts
 ---
