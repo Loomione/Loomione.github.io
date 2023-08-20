@@ -1,5 +1,5 @@
 ---
-title: Mordenr SQL
+title: Modern SQL
 tags: 数据库 SQL
 sidebar:
   nav: layouts
