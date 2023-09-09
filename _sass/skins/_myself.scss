@@ -5,14 +5,14 @@
 ///
 
 // main colors
-$main-color-1:     #CD0000;  //鼠标放在连接上变成的颜色
+$main-color-1:     #CD0000;  //红色
 $text-color-1:     #fff;
 
-$main-color-2:     #838B8B;
+$main-color-2:     #838B8B;  // 灰色
 $text-color-2:     #fff;
 
-$main-color-3:     #fff;  // 网页上端和下端边框的颜色
-$text-color-3:     #000;      // 网站标题颜色
+$main-color-3:     #fff;  // 白色
+$text-color-3:     #000;  // 黑色
 
 $main-color-theme-light: rgba(#000, .9);
 $main-color-theme-dark:  rgba(#fff, .9);
@@ -36,7 +36,7 @@ $text-color-l:     $text-color-theme-light-l;
 $text-background-color: rgba(#000, .05);
 
 // header and footer colors
-$header-text-color: $text-color-3;
+$header-text-color: $text-color-3;  // 文章头部颜色 : 博客名，About，Archive等
 $header-background: $main-color-3;
 
 $footer-text-color: $text-color-3;
@@ -47,7 +47,7 @@ $border-color:     mix(#000, $background-color, 20%);
 $border-color-l:   mix(#000, $background-color, 10%);
 $decorate-color:   rgba(#000, .1);
 $mask-color:       rgba(#000, .9);
-$select-color:     rgba($main-color-1, .5);
+$select-color:     rgba($main-color-2, .5); // 选择某段文字的背景颜色
 
 // function colors
 $green:           #52c41a;
@@ -71,4 +71,4 @@ $github-color:     #000;
 $npm-color:        #fff;
 
 // highlight colors
-@import "skins/highlight/tomorrow";
+@import "skins/highlight/tomorrow-night-eighties";

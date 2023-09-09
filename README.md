@@ -37,20 +37,20 @@ TeXt is a super customizable Jekyll theme for personal site, team site, blog, pr
 
 TeXt has 6 built-in skins, you can also set up your own skin.
 
-| `default` | `dark` | `forest` |
-| --- |  --- | --- |
+| `default`                                                                                                      | `dark`                                                                                                   | `forest`                                                                                                     |
+| -------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
 | ![Default](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_default.jpg) | ![Dark](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_dark.jpg) | ![Forest](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_forest.jpg) |
 
-| `ocean` | `chocolate` | `orange` |
-| --- |  --- | --- |
+| `ocean`                                                                                                    | `chocolate`                                                                                                        | `orange`                                                                                                     |
+| ---------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------ |
 | ![Ocean](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_ocean.jpg) | ![Chocolate](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_chocolate.jpg) | ![Orange](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/skins_orange.jpg) |
 
 ### Highlight Theme
 
 TeXt use [Tomorrow](https://github.com/chriskempson/tomorrow-theme) as the highlight theme.
 
-| `tomorrow` | `tomorrow-night` | `tomorrow-night-eighties` | `tomorrow-night-blue` | `tomorrow-night-bright` |
-| --- |  --- | --- | --- |  --- |
+| `tomorrow`                                                                                                           | `tomorrow-night`                                                                                                                 | `tomorrow-night-eighties`                                                                                                                          | `tomorrow-night-blue`                                                                                                                      | `tomorrow-night-bright`                                                                                                                        |
+| -------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | ![Tomorrow](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow.png) | ![Tomorrow Night](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night.png) | ![Tomorrow Night Eighties](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-eighties.png) | ![Tomorrow Night Blue](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-blue.png) | ![Tomorrow Night Bright](https://raw.githubusercontent.com/kitian616/jekyll-TeXt-theme/master/screenshots/highlight_tomorrow-night-bright.png) |
 
 ## Documentation
@@ -78,12 +78,18 @@ TeXt use [Tomorrow](https://github.com/chriskempson/tomorrow-theme) as the highl
 
 ## Demo Pages
 
-| Name | Description |
-| --- | --- |
-| [Home](https://kitian616.github.io/jekyll-TeXt-theme/test/) | Home page |
-| [Archive](https://kitian616.github.io/jekyll-TeXt-theme/archive.html) | Archive page |
+| Name                                                                          | Description                    |
+| ----------------------------------------------------------------------------- | ------------------------------ |
+| [Home](https://kitian616.github.io/jekyll-TeXt-theme/test/)                   | Home page                      |
+| [Archive](https://kitian616.github.io/jekyll-TeXt-theme/archive.html)         | Archive page                   |
 | [Layout Examples](https://kitian616.github.io/jekyll-TeXt-theme/samples.html) | Examples for different layouts |
 
 ## License
 
 TeXt Theme is [MIT licensed](https://github.com/kitian616/jekyll-TeXt-theme/blob/master/LICENSE).
+
+## 启动本地服务器
+
+```shell
+bundle exec jekyll serve
+```
