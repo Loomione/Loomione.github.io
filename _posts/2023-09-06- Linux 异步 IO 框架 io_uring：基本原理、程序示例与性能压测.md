@@ -1,8 +1,8 @@
 ---
 title: Linux 异步 IO 框架 io_uring：基本原理、程序示例与性能压测
 tags: 异步IO
-sidebar:
-nav: layouts
+aside:
+  toc: true
 ---
 
 [Linux 异步 I/O 框架 **io_uring**：基本原理、程序示例与性能压测（2020）](http://arthurchiao.art/blog/intro-to-io-uring-zh/#%E8%AF%91%E8%80%85%E5%BA%8F)[转]

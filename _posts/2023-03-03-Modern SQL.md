@@ -2,8 +2,8 @@
 title: Modern SQL
 tags: 数据库 SQL
 key: hui1sdf
-sidebar:
-  nav: layouts
+aside:
+  toc: true
 ---
 
 CMU15-445 [Lecture #02: Modern SQL](https://15445.courses.cs.cmu.edu/spring2023/notes/02-modernsql.pdf)[译]
