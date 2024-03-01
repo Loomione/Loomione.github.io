@@ -28,7 +28,7 @@ key: page-about
 
 &emsp;&emsp; Greetings! I am a passionate explorer of the vast realm of technology, and I welcome you to my blog. My journey began at **XDU**, where I laid the foundation for my academic pursuits. Currently, I am pursuing my postgraduate studies at the **UESTC**, focusing on the dynamic of Information and Communication Engineering.
 
-### Passions and Interests
+<!-- ### Passions and Interests
 
 &emsp;&emsp; Fueling my passion is an unquenchable curiosity about the inner workings of technology. My interests have led me to explore various facets of the tech world, including:
 
@@ -46,4 +46,4 @@ key: page-about
 
 ### Join Me on this Quest
 
-&emsp;&emsp; Whether you're a fellow enthusiast, a student, or a curious mind, I invite you to accompany me on this exciting quest for knowledge. Together, we will navigate the ever-evolving landscape of technology, uncovering its hidden gems and pushing the boundaries of our understanding. Welcome to my blog, where curiosity meets code, and where the possibilities are as limitless as the digital world itself.
+&emsp;&emsp; Whether you're a fellow enthusiast, a student, or a curious mind, I invite you to accompany me on this exciting quest for knowledge. Together, we will navigate the ever-evolving landscape of technology, uncovering its hidden gems and pushing the boundaries of our understanding. Welcome to my blog, where curiosity meets code, and where the possibilities are as limitless as the digital world itself. -->
