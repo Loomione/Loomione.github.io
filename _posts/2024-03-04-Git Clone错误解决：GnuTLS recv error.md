@@ -1,5 +1,5 @@
 ---
-title: Git Clone错误解决：GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+title: Git Clone错误解决 GnuTLS recv error (-110) The TLS connection was non-properly terminated.
 tags: git
 aside:
   toc: true
