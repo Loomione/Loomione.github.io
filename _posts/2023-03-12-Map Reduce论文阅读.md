@@ -11,6 +11,8 @@ aside:
 
 ## Map Reduce 模型与实现
 
+<div>{%- include extensions/netease-cloud-music.html id='413812448' -%}</div>
+
 分布式系统的一个重要问题是如何处理大规模数据集。如何处理**并行计算**、如何**分发数据**、如何**处理错误**？_所有这些问题综合在一起，需要大量的代码处理，因此也使得原本简单的运算变得难以处理_。
 
 **MapRecude 动机**: 设计一个抽象模型，使用这个抽象模型，_我们只要表述我们想要执行的简单运算即可_，而*不必关心并行计算、容错、数据分布、负载均衡等复杂的细节*。
@@ -47,6 +49,12 @@ https://pictureloomione.oss-cn-beijing.aliyuncs.com/pic/MapReduce%20paper/map_re
    加到所属分区的输出文件。
 7. 当所有的 Map 和 Reduce 任务都完成之后，master 唤醒用户程序。在这个时候，在用户程序里的对
    MapReduce 调用才返回。
+
+<div  align="center">
+<img src= "
+https://pictureloomione.oss-cn-beijing.aliyuncs.com/pic/MapReduce%20paper/figure-1.png
+"/>
+</div>
 
 ## MapReduce 容错
 
