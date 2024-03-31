@@ -4,7 +4,7 @@ title: Map Reduce 论文阅读
 tags: 分布式 论文阅读
 mode: immersive
 header:
-  theme: white
+  theme: dark
 article_header:
   type: cover
   image:
@@ -16,6 +16,8 @@ aside:
 本文为 Google 发表的[Map Reduce](https://pdos.csail.mit.edu/6.824/papers/mapreduce.pdf) 论文的阅读笔记。
 
 <!--more-->
+
+---
 
 <div>{%- include extensions/soundcloud.html id='291497062' -%}</div>
 
