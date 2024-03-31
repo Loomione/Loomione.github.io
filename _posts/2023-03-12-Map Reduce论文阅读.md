@@ -23,7 +23,7 @@ aside:
 
 ---
 
-## Map Reduce 模型与实现
+## MapReduce 模型与实现
 
 分布式系统的一个重要问题是如何处理大规模数据集。如何处理**并行计算**、如何**分发数据**、如何**处理错误**？_所有这些问题综合在一起，需要大量的代码处理，因此也使得原本简单的运算变得难以处理_。
 
@@ -49,7 +49,7 @@ https://pictureloomione.oss-cn-beijing.aliyuncs.com/pic/MapReduce%20paper/figure
 3. 被分配了 map 任务的 worker 程序读取相关的输入数据片段，从输入的数据片段中解析出 key/value
    pair，然后把 key/value pair 传递给用户自定义的 Map 函数，由 Map 函数生成并输出的中间 key/value
    pair，并缓存在内存中。
-4. 缓存中的 key/value pair 通过分区函数分成 R 个区域，之后周期性的写入到本地磁盘上。缓存的
+4. 缓存中的 key/value pair 通过分区函数**分成 R 个区域**，之后周期性的写入到本地磁盘上。缓存的
    key/value pair 在本地磁盘上的存储位置将被回传给 master，由 master 负责把这些存储位置再传送给
    Reduce worker。
 5. 当 Reduce worker 程序接收到 master 程序发来的数据存储位置信息后，使用 RPC 从 Map worker 所在
@@ -62,14 +62,23 @@ https://pictureloomione.oss-cn-beijing.aliyuncs.com/pic/MapReduce%20paper/figure
 7. 当所有的 Map 和 Reduce 任务都完成之后，master 唤醒用户程序。在这个时候，在用户程序里的对
    MapReduce 调用才返回。
 
+MapReduce 中的 Map 和 Reduce 任务被分为三种状态：**idle**、**in-progress**、**completed**。每个 worker 有两个状态：**idle**、**in-progress**。
+
+- 对于一个 Map 任务来说，当一个 worker 从 master 那里得到一个 Map 任务时，这个任务的状态就变为 in-progress。当这个 worker 完成这个任务后，这个任务的状态就变为 completed。当 Map 任务完成后，中间文件的位置信息将被回传给 master，然后 master 会把这些信息传递给 Reduce worker。当 RReduce worker 完成这个任务后，这个任务的状态就变为 completed,同时执行 Map 的 worker 也会被标记为 idle。
+
+**输入数据的存储位置**: 把输入数据(由 GFS 管理)存储在集群中机器的本地磁盘上来节省网络带宽。GFS 把每个文件按 64MB 一个 Block 分隔，每个 Block 保存在多台机器上，环境中就存放了多份拷贝(一般是 3 个拷贝)， 因此在 Map 的任务调度时，会尽量将一个 Map 任务调度在包含相关输入数据拷贝的机器上执行；
+
+**备用任务**: 根据木桶效应，如果一个任务的执行时间远远大于其它任务，那么这个任务就会成为整个 MapReduce 运算的瓶颈。当一个 MapReduce 操作接近完成的时候，master
+调度备用（backup）任务进程来执行剩下的、处于处理中状态（in-progress）的任务。无论是最初的执行进程、还是备用（backup）任务进程完成了任务，我们都把这个任务标记成为已经完成。
+
 ## MapReduce 容错
 
 ### worker 故障
 
 **master 周期性的 ping 每个 worker**。如果在一个约定的时间范围内没有收到 worker 返回的信息，master 将
-把这个 worker 标记为失效。所有由这个失效的 worker 完成的 Map 任务被重设为初始的空闲状态，之后这些
+把这个 worker **标记为失效**。所有由这个失效的 worker 完成的 Map 任务被重设为初始的空闲状态，之后这些
 任务就可以被安排给其他的 worker。同样的，worker 失效时正在运行的 Map 或 Reduce 任务也将被重新置为
-空闲状态，等待重新调度。
+**空闲状态**，等待**重新调度**。
 
 当 worker 故障时，由于已经完成的 Map 任务的输出存储在这台机器上，Map 任务的输出已不可访问了，因此必须重新执行。而已经完成的 Reduce 任务的输出存储在全局文件系统上，因此不需要再次执行。
 
@@ -77,3 +86,15 @@ https://pictureloomione.oss-cn-beijing.aliyuncs.com/pic/MapReduce%20paper/figure
 
 如果 master 失效，就中止 MapReduce 运算。客户可以检查到这个状态，并且可以根据需要重新执行 MapReduce
 操作。
+
+### MapReduce 的原子性
+
+当用户提供的 Map 和 Reduce 操作是输入确定性函数（即相同的输入产生相同的输出）时，分布式实现在任何情况下的输出都和所有程序没有出现任何错误、顺序的执行产生的输出是一样的。这依赖对 Map 和 Reduce 任务的输出是原子提交的来完成这个特性。
+
+## MapReduce 技巧
+
+## 问题记录
+
+在 3.3.3 节中，论文提到了一个问题：如果同一个 Reduce 任务在多台机器上执行，针对同一个最终的输出文件将有多个重命名操作执行。我们依赖底层文件系统提供的重命名操作的原子性来保证最终的文件系统状态仅仅包含一个 Reduce 任务产生的数据。**为什么会出想同一个 reduce 出现子啊多台机器上执行的情况？？**
+
+> 可能的一个原因就是备用任务的出现，加入一个 Reduce 成为了整个系统的瓶颈，那么就会调度备用任务来执行这个 Reduce 任务，这样就会出现同一个 Reduce 任务在多台机器上执行的情况。
