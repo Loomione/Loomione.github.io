@@ -2,6 +2,9 @@
 layout: article
 title: Map Reduce 论文阅读
 tags: 分布式 论文阅读
+mode: immersive
+header:
+  theme: dark
 article_header:
   type: cover
   image:
