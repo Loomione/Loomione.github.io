@@ -1,6 +1,11 @@
 ---
+layout: article
 title: Map Reduce 论文阅读
 tags: 分布式 论文阅读
+article_header:
+  type: cover
+  image:
+    src: https://pictureloomione.oss-cn-beijing.aliyuncs.com/pic/MapReduce%20paper/map_reduce.png
 aside:
   toc: true
 ---
@@ -26,7 +31,7 @@ aside:
 
 <div  align="center">
 <img src= "
-https://pictureloomione.oss-cn-beijing.aliyuncs.com/pic/MapReduce%20paper/map_reduce.png
+https://pictureloomione.oss-cn-beijing.aliyuncs.com/pic/MapReduce%20paper/figure-1.png
 "/>
 </div>
 
@@ -49,12 +54,6 @@ https://pictureloomione.oss-cn-beijing.aliyuncs.com/pic/MapReduce%20paper/map_re
    加到所属分区的输出文件。
 7. 当所有的 Map 和 Reduce 任务都完成之后，master 唤醒用户程序。在这个时候，在用户程序里的对
    MapReduce 调用才返回。
-
-<div  align="center">
-<img src= "
-https://pictureloomione.oss-cn-beijing.aliyuncs.com/pic/MapReduce%20paper/figure-1.png
-"/>
-</div>
 
 ## MapReduce 容错
 
