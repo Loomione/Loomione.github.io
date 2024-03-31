@@ -4,7 +4,7 @@ title: Map Reduce 论文阅读
 tags: 分布式 论文阅读
 mode: immersive
 header:
-  theme: dark
+  theme: white
 article_header:
   type: cover
   image:
@@ -19,7 +19,7 @@ aside:
 
 ## Map Reduce 模型与实现
 
-<div>{%- include extensions/netease-cloud-music.html id='2139367135' -%}</div>
+<div>{%- include extensions/soundcloud.html id='291497062' -%}</div>
 
 分布式系统的一个重要问题是如何处理大规模数据集。如何处理**并行计算**、如何**分发数据**、如何**处理错误**？_所有这些问题综合在一起，需要大量的代码处理，因此也使得原本简单的运算变得难以处理_。
 
