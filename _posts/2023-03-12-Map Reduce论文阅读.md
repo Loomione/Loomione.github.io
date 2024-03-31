@@ -11,7 +11,7 @@ aside:
 
 ## Map Reduce 模型与实现
 
-<div>{%- include extensions/netease-cloud-music.html id='413812448' -%}</div>
+{%- include extensions/netease-cloud-music.html id='413812448' -%}
 
 分布式系统的一个重要问题是如何处理大规模数据集。如何处理**并行计算**、如何**分发数据**、如何**处理错误**？_所有这些问题综合在一起，需要大量的代码处理，因此也使得原本简单的运算变得难以处理_。
 
