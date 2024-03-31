@@ -13,7 +13,7 @@ aside:
   toc: true
 ---
 
-本文为 Google 发表的[Map Reduce](https://pdos.csail.mit.edu/6.824/papers/mapreduce.pdf) 论文的阅读笔记。
+本文为 Google 发表的[Map Reduce](https://pdos.csail.mit.edu/6.824/papers/mapreduce.pdf) 论文的阅读笔记, MapReduce 为一个分布式计算框架。
 
 <!--more-->
 
