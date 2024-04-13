@@ -17,7 +17,7 @@
 ## => Site Settings
 ##############################
 text_skin: myself # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
-highlight_theme: tomorrow # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
+highlight_theme: tomorrow-night-eighties # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
 url     : # the base hostname & protocol for your site e.g. https://www.someone.com
 baseurl : # does not include hostname
 title   : Loomione
@@ -37,7 +37,7 @@ author:
   type      : "person"
   name      : GuSJ
   url       : gusj1420.cc
-  avatar    : https://avatars.githubusercontent.com/u/68137332?s=400&u=6a4f9a52410e0b20ef2378d9ce1da56fd5d8334a&v=4
+  avatar    : https://img2.woyaogexing.com/2022/08/14/3093346b52917992!400x400.jpg
   bio       : I am an amazing person.
   email     : 202221011114@std.uestc.edu.cn
   facebook  : # "user_name" the last part of your profile url, e.g. https://www.facebook.com/user_name
