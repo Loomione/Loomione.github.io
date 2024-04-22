@@ -17,11 +17,7 @@ aside:
 
 <!--more-->
 
----
 
-<div>{%- include extensions/soundcloud.html id='291497062' -%}</div>
-
----
 
 ## MapReduce 模型与实现
 
